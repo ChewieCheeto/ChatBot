@@ -1,15 +1,14 @@
 # Chatbot with Google Cloud Natural Language API
 
-This is a simple chatbot built with Python, Flask, and the Google Cloud Natural Language API. The chatbot is capable of answering questions based on the content of a given web page.
+This is a simple chatbot built with Python, Flask, and the spaCy NPL model. The chatbot is capable of finding the remander of a sentence in a website provided by the user. The code uses Flask along side an HTML file to create a local host where you can imput the question and website link.
 
 ## Features
-- Fetches content from a specified URL
-- Analyzes the content using Google Cloud Natural Language API
-- Generates responses based on user queries
-- Provides a basic web interface for interaction
+- Fetches content from a specified URL using web scraping techniques
+- Analyzes user queries using spaCy for natural language processing
+- Generates responses based on the content of the web page
 
 ## Installation
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/your_username/your_repository.git
    ```
@@ -28,9 +27,7 @@ This is a simple chatbot built with Python, Flask, and the Google Cloud Natural 
 
 ## Configuration
 The chatbot configuration can be modified in the `Chatbot.py` file.
-- Update the `google_api_key` variable with your Google Cloud API key.
 - Update the `url` variable with the URL of the web page you want to analyze.
 
 ## Troubleshooting
 - If you encounter any issues, please check the console for error messages.
-- Ensure that you have set up the Google Cloud project correctly and enabled the Cloud Natural Language API.
